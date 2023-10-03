@@ -7,8 +7,6 @@ name: sync CI
 on:
   schedule:
     - cron: "0 0 * * *"
-  push:
-    branches: [main]
 permissions:
   contents: write
 
