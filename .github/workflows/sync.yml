@@ -7,13 +7,11 @@ name: sync CI
 on:
   schedule:
     - cron: "0 0 * * *"
-permissions:
-  contents: write
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-   build:
+  build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     strategy:
@@ -31,11 +29,3 @@ jobs:
         
       - name: Exec the job
         run: node index.js ${{ secrets.ORG_PAT }}
-   cronjob-based-github-action:
-    name: Cronjob based github action
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: gautamkrishnar/keepalive-workflow@v1 
-        with:
-          commit_message: "chore: schedule commit"
