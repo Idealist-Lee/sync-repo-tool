@@ -20,5 +20,15 @@ export default function () {
       syncerUsername: "SyncDocsBot",
       syncerEmail: "tsdocs@126.com",
     },
+    {
+      originalRepoOwner: "CherryHQ",
+      originalRepoName: "cherry-studio",
+      originalRepoDefaultBranch: "main",
+      needSyncRepoOwner: "awxiaoxian2020",
+      needSyncRepoName: "word-box",
+      needSyncRepoBranch: "word",
+      syncerUsername: "SyncDocsBot",
+      syncerEmail: "tsdocs@126.com",
+    },
   ];
 }
